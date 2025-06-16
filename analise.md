@@ -9,7 +9,9 @@ Ao clicar em um botão com uma mina, o jogador recebe uma mensagem de game over 
 
 ## Diagrama de Casos de Uso
 
-
+<img src="imqges/casos_uso.png"
+     width="30%"
+     style="padding: 10px">
 
  
 ## Diagrama de Domínio do problema
