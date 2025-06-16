@@ -53,19 +53,19 @@ Ao mesmo tempo que o mapa mostrar todas as bombas descobertas, um menu de result
 ## Diagramas de sequência
 
 <img src="images/escolhe_dif.png"
-     width="50%"
+     width="70%"
      style="padding: 10px">
 
 <img src="images/inicia_jogo.png"
-     width="70%"
+     width="80%"
      style="padding: 10px">
 
 <img src="images/abrir_campo.png"
-     width="70%"
+     width="80%"
      style="padding: 10px">
 
 <img src="images/bandeira.png"
-     width="70%"
+     width="80%"
      style="padding: 10px">
 
 
