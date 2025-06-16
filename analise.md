@@ -17,7 +17,7 @@ Ao clicar em um botão com uma mina, o jogador recebe uma mensagem de game over 
 ## Diagrama de Domínio do problema
 
 <img src="images/dominio_problema.png"
-     width="50%"
+     width="70%"
      style="padding: 10px">
 
 
