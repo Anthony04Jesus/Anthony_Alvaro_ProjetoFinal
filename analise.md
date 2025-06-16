@@ -9,7 +9,7 @@ Ao clicar em um botão com uma mina, o jogador recebe uma mensagem de game over 
 
 ## Diagrama de Casos de Uso
 
-<img src="images/casos_uso_att.png"
+<img src="images/casos_uso.png"
      width="45%"
      style="padding: 10px">
 
@@ -41,6 +41,25 @@ Ao mesmo tempo que o mapa mostrar todas as bombas descobertas, um menu de result
 <img src="images/dominio_problema.png"
      width="70%"
      style="padding: 10px">
+
+## Diagramas de sequência
+
+<img src="images/dominio_problema.png"
+     width="70%"
+     style="padding: 10px">
+
+<img src="images/dominio_problema.png"
+     width="70%"
+     style="padding: 10px">
+
+<img src="images/dominio_problema.png"
+     width="70%"
+     style="padding: 10px">
+
+<img src="images/dominio_problema.png"
+     width="70%"
+     style="padding: 10px">
+
 
 
 <div align="center">
