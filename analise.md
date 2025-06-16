@@ -44,19 +44,19 @@ Ao mesmo tempo que o mapa mostrar todas as bombas descobertas, um menu de result
 
 ## Diagramas de sequência
 
-<img src="images/dominio_problema.png"
+<img src="images/escolhe_dif.png"
+     width="50%"
+     style="padding: 10px">
+
+<img src="images/inicia_jogo.png"
      width="70%"
      style="padding: 10px">
 
-<img src="images/dominio_problema.png"
+<img src="images/abrir_campo.png"
      width="70%"
      style="padding: 10px">
 
-<img src="images/dominio_problema.png"
-     width="70%"
-     style="padding: 10px">
-
-<img src="images/dominio_problema.png"
+<img src="images/bandeira.png"
      width="70%"
      style="padding: 10px">
 
