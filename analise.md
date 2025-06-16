@@ -14,10 +14,10 @@ Ao clicar em um botão com uma mina, o jogador recebe uma mensagem de game over 
 ## Diagrama de Casos de Uso
 
 <img src="images/casos_uso.png"
-     width="45%"
+     width="60%"
      style="padding: 10px">
 
-1 - O jogador entra na tela inicial do jogo, onde há 3 botões: novo jogo, opções e sobre (about). Ao clicar em “Novo jogo”, se abre uma janela menor com com título “Dificuldade” e 3 botões “Fácil”, “Intermediário” e “Difícil”;
+O jogador entra na tela inicial do jogo, onde há 3 botões: novo jogo, opções e sobre (about). Ao clicar em “Novo jogo”, se abre uma janela menor com com título “Dificuldade” e 3 botões “Fácil”, “Intermediário” e “Difícil”;
 
 Caso de uso - escolher dificuldade:
 
