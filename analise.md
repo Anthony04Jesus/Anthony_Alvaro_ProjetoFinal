@@ -42,6 +42,10 @@ Ao mesmo tempo que o mapa mostrar todas as bombas descobertas, um menu de result
      width="70%"
      style="padding: 10px">
 
+<img src="images/diagrama_classes.png"
+     width="80%"
+     style="padding: 10px">
+
 ## Diagramas de sequência
 
 <img src="images/escolhe_dif.png"
