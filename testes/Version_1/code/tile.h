@@ -21,20 +21,16 @@ public:
     Tile(QWidget *parent = nullptr);
 
 protected:
-    //void keyPressEvent(QKeyEvent *event) override;
 
 public slots:
-    //void keyPressed();
 
 signals:
     void keyStroke(char);
-    //void valueChanged(enum Tile_State newState);
 
 
 private:
     bool        bomb;
     Tile_State  state;
-    //QVector<Tile*> adjacentes;
     int         line;
     int         colum;
 };
