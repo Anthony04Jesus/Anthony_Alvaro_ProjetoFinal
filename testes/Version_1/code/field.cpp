@@ -20,7 +20,6 @@ Field::Field(QWidget *parent): QWidget{parent}
             tmp = new Tile;
             tmp->setMaximumSize(30,30);
             tmp->setMinimumSize(30,30);
-            //connect(tmp, SIGNAL(clicked()), this, SLOT(keyPressed()));
             _layout->addWidget(tmp, L, C);
         }
     }
