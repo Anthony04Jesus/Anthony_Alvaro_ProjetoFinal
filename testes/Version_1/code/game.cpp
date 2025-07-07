@@ -21,7 +21,7 @@ Game::Game(QWidget *parent): QWidget{parent}
     QIcon icon(smileyFace); // Create a QIcon from the QPixmap
 
     // RESTART BUTTON
-    _restart = new QPushButton(); //QString::number(L)
+    _restart = new QPushButton();
     _restart->setMaximumSize(80,80);
     _restart->setMinimumSize(40,40);
     _restart->setIcon(icon);
@@ -52,7 +52,7 @@ Game::Game(QWidget *parent): QWidget{parent}
     connect(_restart, SIGNAL(clicked()), this, SLOT(keyPressed()));
 
     // LABEL BOMB COUNTER
-    _counter = new QLCDNumber(); //_counter->setGeometry(0,0,100,100);
+    _counter = new QLCDNumber();
     _counter->setSegmentStyle(QLCDNumber::Flat);
     _counter->setDigitCount(4);
     _counter->display(999);
@@ -108,8 +108,6 @@ Game::Game(QWidget *parent): QWidget{parent}
         );
 
     // SETTING LAYOUT
-    // QWidget* topBarContainer = new QWidget(this);
-    // _UI_layout = new QHBoxLayout(topBarContainer);
     _UI_layout = new QHBoxLayout();
     _UI_layout->addStretch(3000);
     _UI_layout->addWidget(_counter);
@@ -118,15 +116,6 @@ Game::Game(QWidget *parent): QWidget{parent}
     _UI_layout->addStretch(10000);
     _UI_layout->addWidget(_timer);
     _UI_layout->addStretch(3000);
-    // topBarContainer->setMinimumSize(300, 400);
-    // topBarContainer->setStyleSheet(
-    //     "QWidget {"
-    //     "   background-color: #A0A0A0;"
-    //     "   border: 2px outset #C0C0C0;" // Raised border
-    //     "   border-radius: 0px;"
-    //     "   padding: 5px;"
-    //     "}"
-    // );
 
     //QFrame* gameBoardContainer = new QFrame(this);
     _Field_layout = new QGridLayout();
@@ -142,14 +131,8 @@ Game::Game(QWidget *parent): QWidget{parent}
 void Game::keyPressEvent(QKeyEvent *event)
 {
     int k = event->key();
-    //if(k == Qt::Key_Space)
-        //_restart->animateClick(100);
 }
 void Game::keyPressed()
 {
 
 }
-
-
-
-
