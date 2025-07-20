@@ -6,7 +6,7 @@
 
 # Campo minado
 
-##  A aplicação desenvolvida se trata de um jogo de campo minado. Um mapa de botões será gerado com bombas espalhadas aleatoriamente. Ao clicar em um quadrado sem bomba, será mostrado o número de bombas nos quadrados adjascentes. O objetivo é clicar em todos os quadrados que não possuem bombas. Ao alcançar o objetivo, será mostrado uma aba de resultados e a opção de recomeçar o jogo.
+##  A aplicação desenvolvida se trata de um jogo de campo minado. Um mapa de botões será gerado com bombas espalhadas e escondidas aleatoriamente. Ao clicar em um quadrado sem bomba, será mostrado o número de bombas nos 8 quadrados adjascentes. O objetivo é descobrir todos os quadrados que não possuem bombas. Ao alcançar o objetivo, todos os botões  com bombas cobertas mostrarão bandeiras amarelas e botão de recomeçar o jogo mostrará um ícone diferente.
 
 > Repositório destinado para o desenvolvimento do projeto final da discipliana PRG203405 - Programação orienta a objeto.  
 > 
