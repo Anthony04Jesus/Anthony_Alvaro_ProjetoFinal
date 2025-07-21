@@ -4,8 +4,9 @@ Análise orientada a objetos do jogo campo minado.
 
 ## Descrição Geral do domínio do problema
 
-A aplicação a ser desenvolvida se trata de um jogo de Campo Minado. O conteúdo do jogo é, basicamente, um mapa de botões quadrados em que estão dispostas bombas escondidas aleatoriamente debaixo de alguns deles. O objetivo do jogador é clicar em todos os espaços que não possuem minas. Para saber onde deve clicar, cada botão livre de bombas indicará a quantidade de explosivos nos 8 quadrados adjascentes. Para marcar a localização de uma possível bomba, o jogador pode adicionar uma bandeira no botão correspondente. A quantidade máxima dessas bandeiras é o número de bombas dispostas no mapa.
-Ao clicar em um botão com uma mina, o jogador recebe uma mensagem de game over e todas as bombas escondidas são reveladas. Ademais, um menu de resultados são apresentados, como a quantidade de cliques realizados, tempo do jogo, melhor resultado, vitórias consecutivas, etc.
+A aplicação a ser desenvolvida se trata de um jogo de Campo Minado. O conteúdo do jogo é, basicamente, um mapa de botões quadrados em que estão dispostas bombas escondidas aleatoriamente debaixo de alguns deles. O objetivo do jogador é clicar em todos os espaços que não possuem minas. Para saber onde deve clicar, cada botão livre de bomba indicará a quantidade de explosivos nos 8 quadrados adjascentes. Para marcar a localização de uma possível bomba, o jogador pode adicionar uma bandeira no botão correspondente, inibindo um clique acidental. A quantidade máxima dessas bandeiras é o número de bombas dispostas no mapa.
+O jogador terá 3 opções de mapa para jogar; o modo iniciante terá uma campo 10x10 com 10 bombas, o intermediário terá um 15x15 e 25 bombas e o avançado, 20x20 com 70 bombas.
+Ao clicar em um botão com uma mina, o jogador recebe uma mensagem de game over e todas as bombas escondidas são reveladas. Ademais, um menu de resultados são apresentados, como a quantidade de cliques realizados, tempo do jogo, vitórias consecutivas, etc.
 
 <img src="images/mine2.png"
      width="70%"
