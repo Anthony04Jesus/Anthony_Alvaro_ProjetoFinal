@@ -29,6 +29,7 @@ Inicialmente, o jogador entra na tela principal do jogo, onde há 5 botões (al�
 
 <h1>Caso de uso - escolher dificuldade:</h1>
 
+3 botões estarão alocados no topo da janela, dispondo das dificuldades disponíveis para o jogo.
 Ao selecionar a dificuldade fácil, o mapa do campo minado gerará um grid 10x10; no médio, um grid 15x15 e no avançado, 20x20;
 
 <h1>Caso de uso - Iniciar jogo:</h1>
