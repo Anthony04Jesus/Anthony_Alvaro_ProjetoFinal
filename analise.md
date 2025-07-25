@@ -35,6 +35,7 @@ Ao selecionar a dificuldade fácil, o mapa do campo minado gerará um grid 10x10
 
 No início do jogo, o usuário verá um layout de botões, um cronômetro zerado no canto superior direito e, no esquerdo, um contador fixo com o número máximo de flags que poderá utilizar;
 Ao apertar o primeiro quadrado, o cronômetro é ativado, mostrando o tempo de jogo até que todos os botões sem bomba estejam descobertos ou se o jogador tenha clicado sobre uma bomba;
+Ao ganhar, perder ou se estiver no meio de uma partida e o jogador quiser gerar um novo jogo, há 3 opções: clicar na tela espaço do teclado, apertar no botão com o emoji sorrindo (ou triste - se tiver perdido a partida) ou selecionar, na parte superior da janela, qual a dificuldade deseja para a próxima partida; as duas primeiras opções levam a um novo jogo na dificuldade antes selecionada.
 
 <h1>Caso de uso - colocar bandeira:</h1>
  
@@ -46,6 +47,11 @@ Ao clicar em um botão, o sistema checará se há bombas nos 8 quadrados adjasce
 Se o botão clicado não tiver bombas em seus vizinhos, esse ponto não terá nenhum número e possíveis botões adjacentes a este que estiverem sem bombas serão descobertos automaticamente através desse clique, indicando o número de bombas se for o caso;
 Clicando em um botão que tem bomba escondida, as demais bombas serão demonstradas no mapa com imagens de bombas e fundos vermelhos, e a bomba clicada terá um ícone especial, como se explodida de fato;
 Ao mesmo tempo que o mapa mostrar todas as bombas descobertas, o menu de resultados aparecerá.
+
+<h1>Caso de uso - mostra resultado:</h1>
+
+Ao perder ou ganhar um jogo, o sistema mostrará uma janela com os resultados da partida. Uma mensagem evidenciará se o jogador perdeu ou ganhou, além dos segundos decorridos na partida e a quantidade de cliques no mouse, tanto do botão esquerdo quanto do direito. Haverá um botão próprio para fechar esta janela.
+
 
 ## Diagrama de Domínio do problema
 
