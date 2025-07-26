@@ -58,7 +58,7 @@ Manutenção do sistema:
 <br><br>
 <div align="center">
 <img src="images/mine2.png"
-     width="70%"
+     width="50%"
      style="padding: 10px">
 </div>
 
@@ -103,15 +103,18 @@ Ao perder ou ganhar um jogo, o sistema mostrará uma janela com os resultados da
 
 
 ## Diagrama de Domínio do problema
-
+<div align="center">
 <img src="images/dominio_problema.png"
      width="70%"
      style="padding: 10px">
-     
+</div> 
+
 ## Diagrama de classes
+<div align="center">
 <img src="images/diagrama_classes.png"
-     width="80%"
+     width="100%"
      style="padding: 10px">
+</div>
 
 ## Diagramas de sequência
 
