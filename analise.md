@@ -105,7 +105,7 @@ Ao perder ou ganhar um jogo, o sistema mostrará uma janela com os resultados da
 ## Diagrama de Domínio do problema
 <div align="center">
 <img src="images/dominio_problema_att.png"
-     width="70%"
+     width="100%"
      style="padding: 10px">
 </div> 
 
