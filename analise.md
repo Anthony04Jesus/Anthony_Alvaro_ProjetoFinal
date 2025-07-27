@@ -110,9 +110,9 @@ Este caso de uso, em termos técnicos e tendo em vista o diagrama de classe a se
 - Em seguida, a classe Field conecta o sinal emitido pela classe Tile em um slot próprio - setFlag(bool act) - que faz a contagem das bandeiras alocadas;
 - O slot recebe como parâmetro um dado booleano do sinal de Tile;
 - A função do slot é verificar o valor booleano do parâmetro e, através de uma condicional, definir se o contador cresce ou decresce;
-- Se o parâmetro for True (o botão estava coberto/limpo), o sistema decrementa uma unidade do contador, pois uma bandeira foi alocada;
+- Se o parâmetro for True (o botão estava coberto/limpo), o sistema decrementa uma unidade do contador _flag_count, pois uma bandeira foi alocada;
 - Se não (parâmetro False - o botão já estava marcado), o sistema acrescenta uma unidade ao contador, visto que a bandeira foi retirada e está novamente disponível para ser utilizada;
-- O sistema, na própria classe Field, mostra no display o contador de bandeiras "disponíveis" de acordo com a quantidade de bombas dispostas no mapa;
+- O sistema, na própria classe Field, mostra no display o contador de bandeiras "disponíveis";
 - O jogo não limita a quantidade de bandeiras alocadas no mapa, porém se o display mostrar um número negativo significa que há mais marcações do que bombas, evidenciando algum erro de interpretação do jogador.  
 
 <br><br>
