@@ -11,47 +11,47 @@ Ao clicar em um botão com uma mina, o jogador recebe uma mensagem de game over 
 ## Requisitos funcionais do software: 
 
 
-Caso escolher dificuldade:
+**Caso escolher dificuldade:**
 - Permitir seleção de dificuldade sempre que o jogador quiser;
 - Gerar campo com quantidade de botões e bombas equivalentes à dificuldade desejada;
   
-Caso iniciar jogo:
+**Caso iniciar jogo:**
 - Inicialmente todos os botões devem esconder seu conteúdo, sejam bombas, números ou em branco;
 - No início, antes do primeiro clique, nenhuma bomba estará posicionada;
 - Após o primeiro clique as bombas são alocadas nos botões, aleatoriamente;
 - Reiniciar jogo quando o jogador quiser;
 
-Caso abrir campo:
+**Caso abrir campo:**
 - Abrir célula ao clicar com botão esquerdo;
 - Se o botão clicado possuir uma mina, em seguida serão mostradas todas as bombas que estavam escondidas e uma janela com resultados será mostrada;
 - Se o botão clicado não tiver bomba, será checado nos 8 quadrados adjascentes a quantidade de minas presentes e indicará o número neste espaço do botão;
 - Se não houver minas nos 8 quadrados adjascentes, ficará em branco e fará a checagem nos outros quadrados próximos;
   
-Caso colocar bandeira:
+**Caso colocar bandeira:**
 - Posicionar ou retirar bandeira com botão direito;
 - Ao clicar com botão esquerdo sobre uma bandeira, nada acontece, a fim de inibir a explosão de bombas por cliques acidentais;
 - A quantidade de bandeiras restantes para marcar o número máximo de bombas será mostrado em um contador no canto superior esquerdo da janela;
 - O contador pode ficar negativo, porém o jogador deve entender que estará posicionando mais bandeiras que o necessário;
 
-Caso mostrar resultado:
+**Caso mostrar resultado:**
 - O sistema deve mostrar a janela de resultados automaticamente após o jogador perder ou ganhar uma partida;
 - Os seguintes resultados devem ser mostrados: número de cliques esquerdos e direitos do mouse, se o jogador perdeu ou ganhou e o tempo decorrido naquela partida;
 - Após fechar a janela de resultados, o jogador poderá escolher uma nova dificuldade ou iniciar um novo jogo no grid já escolhido.
 
 ## Requisitos não-funcionais do software: 
-Interface:
+**Interface:**
 - Os botões terão animação ao ter o mouse passado sobre eles, bem como se forem clicados;
 - As bombas mostradas em um caso de game over terão um funco avermelhado, para evidenciar suas posições e as destacar no grid;
 - Botões de dificuldade e os números mostrados embaixo dos botões - depois de clicados - serão coloridos.
 
-Usabilidade:
+**Usabilidade:**
 - O sistema é simples de utilizar, já iniciando com um mapa de botões na dificuldade iniciante, pronto para o primeiro clique;
 - Para mudar a dificuldade basta selecionar a opção correspondente que o sistema gerará o mapa, dispensando a criação de outras janelas ou outros fatores que atrasem a interação sistema-usuário.
 
-Desempenho:
+**Desempenho:**
 - Em aspectos gerais, o jogo possui rápido desempenho e não possui travas perceptíveis ao jogador.
 
-Manutenção do sistema:
+**Manutenção do sistema:**
 - Possui fácil manejo do código e manutenções são fáceis de realizar, tendo em vista a caracte3rística orientada a objeto presente na maior parte do código;
 - O jogo permite a criação de novas dificuldades - como uma personalizável - e outras funções no futuro, como o manejo do tamanho das janelas, número de bombas por mapa - independente da dificuldade -, entre outras.
 
@@ -115,7 +115,7 @@ Este caso de uso, em termos técnicos e tendo em vista o diagrama de classe a se
 - O sistema, na própria classe Field, mostra no display o contador de bandeiras "disponíveis" de acordo com a quantidade de bombas dispostas no mapa;
 - O jogo não limita a quantidade de bandeiras alocadas no mapa, porém se o display mostrar um número negativo significa que há mais marcações do que bombas, evidenciando algum erro de interpretação do jogador.  
 
-
+<br><br>
 ## Diagrama de Domínio do problema
 <div align="center">
 <img src="images/dominio_problema_att.png"
