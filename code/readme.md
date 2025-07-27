@@ -8,7 +8,7 @@ Para executar o jogo Campo Minado com sucesso, será necessário abrir o projeto
   <br><br>
   __2__ - Esta maneira permite baixar somente a pasta "Minesweeper_game", ao invés do repositório inteiro. <br>
 Será necessário entrar no seguinte site da web: https://minhaskamal.github.io/DownGit/#/home <br>
-Em seguida, basta colar o diretório que está a pasta do jogo no GitHub e clicar em "Download": https://github.com/Anthony04Jesus/Anthony_Alvaro_ProjetoFinal/tree/main/code/Minesweeper_game <br>
+Em seguida, basta colar o seguinte diretório - em que está a pasta do jogo no GitHub - e clicar em "Download": https://github.com/Anthony04Jesus/Anthony_Alvaro_ProjetoFinal/tree/main/code/Minesweeper_game <br>
 No seu Windows Explorer, descompacte a pasta e lembre sua localização.<br>
 Observação: o site sugerido serve apenas para baixar uma pasta específica em um repositório GitHub; seu código fonte encontra-se no seguinte link: https://github.com/MinhasKamal/DownGit <br>
 Desenvolvedor: Minhas Kamal
