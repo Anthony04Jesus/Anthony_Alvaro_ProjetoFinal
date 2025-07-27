@@ -47,7 +47,7 @@ Uso: Usa QApplication para inicializar a aplicação Qt e gerenciar o loop de ev
 
 - **AboutWindow:**<br>
 Herança: Herda de QDialog.<br>
-Descrição: Usa QDialog como base para criar uma janela com informações sobre a criação do jogo, versão corrente, data e nossos nomes - desenvolvedores do jog, permitindo interação limitada até o fechamento.
+Descrição: Usa QDialog como base para criar uma janela com informações sobre a criação do jogo, versão corrente, data e nossos nomes - desenvolvedores do jogo, permitindo interação limitada até o fechamento.
 
 - **Game:**<br>
 Herança: Herda de QWidget.<br>
@@ -59,11 +59,17 @@ Descrição: Usa QWidget como contêiner para o campo de jogo, incluindo tiles, 
 
 - **Tile:**<br>
 Herança: Herda de QPushButton.<br>
-Descrição: Usa QPushButton para criar cada céluka interativa do campo, com estados (Tile_State) e sinais personalizados.
+Descrição: Usa QPushButton para criar cada célula interativa do campo, com estados (Tile_State) e sinais personalizados.
 
 - **ResultWindow:**<br>
 Herança: Herda de QDialog.<br>
 Descrição: Usa QDialog para exibir o resultado do jogo em uma janela própria. Vitória ou derrota e estatísticas já comentadas são exibidas.
+
+# Associação entre classes
+
+- **Field e Tile:**<br>
+Tipo: Composição (linha sólida com losango preenchido).<br>
+Descrição: Field contém um array de Tile , representando o grid de casas. Os tiles são criados e destruídos junto com Field.
 
 
 
