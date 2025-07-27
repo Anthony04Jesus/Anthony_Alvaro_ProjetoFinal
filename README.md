@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="logo_ifsc/ifsc-logo.png" 
+    <img src="images/ifsc-logo.png" 
          width="60%" 
          style="padding: 10px">
 </div>
