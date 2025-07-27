@@ -86,10 +86,6 @@ No início do jogo, o usuário verá um layout de botões, um cronômetro zerado
 Ao apertar o primeiro quadrado, o cronômetro é ativado, mostrando o tempo de jogo até que todos os botões sem bomba estejam descobertos ou se o jogador tenha clicado sobre uma bomba;
 Ao ganhar, perder ou se estiver no meio de uma partida e o jogador quiser gerar um novo jogo, há 3 opções: clicar na tela espaço do teclado, apertar no botão com o emoji sorrindo (ou triste - se tiver perdido a partida) ou selecionar, na parte superior da janela, qual a dificuldade deseja para a próxima partida; as duas primeiras opções levam a um novo jogo na dificuldade antes selecionada.
 
-<h1>Caso de uso - colocar bandeira:</h1>
- 
-Tendo a suspeita de alguma bomba, ele poderá marcar o quadrado com uma bandeira (flag); ao fazê-lo, o contador de flags irá subtrair da quantidade disponível. A quantidade inicial mostrada no contador se refere ao número de minas dispostas no grid; se o jogador clicar com o botão esquerdo em cima de uma bandeira já posicionada, nada acontece, já que ele presumiu que ali teria uma bomba; É possível retirar bandeiras posicionadas. Ademais, o jogador pode colocar quantas bandeiras quiser, porém o contador ficará negativo, sinalizando que há mais bandeiras posicionadas que o necessário;
-
 <h1>Caso de uso - abrir campo:</h1>
 
 Ao clicar em um botão, o sistema checará se há bombas nos 8 quadrados adjascentes a este e indicará a quantidade .
@@ -100,6 +96,24 @@ Ao mesmo tempo que o mapa mostrar todas as bombas descobertas, o menu de resulta
 <h1>Caso de uso - mostra resultado:</h1>
 
 Ao perder ou ganhar um jogo, o sistema mostrará uma janela com os resultados da partida. Uma mensagem evidenciará se o jogador perdeu ou ganhou, além dos segundos decorridos na partida e a quantidade de cliques no mouse, tanto do botão esquerdo quanto do direito. Haverá um botão próprio para fechar esta janela.
+
+<h1>Caso de uso - colocar bandeira:</h1>
+
+Tendo a suspeita de alguma bomba, o jogador poderá marcar o quadrado com uma bandeira (flag); ao fazê-lo, o contador de flags irá subtrair da quantidade disponível. A quantidade inicial mostrada no contador se refere ao número de minas dispostas no grid; se o jogador clicar com o botão esquerdo em cima de uma bandeira já posicionada, nada acontece, já que ele presumiu que ali teria uma bomba. É possível retirar bandeiras posicionadas. Ademais, o jogador pode colocar quantas bandeiras quiser, porém o contador ficará negativo, sinalizando que há mais bandeiras posicionadas que o necessário;
+Este caso de uso, em termos técnicos e tendo em vista o diagrama de classe a seguir, pode ser descrito como:
+- O jogador clica com o botão direito em uma casa (tile);
+- Através da classe QMouseEvent, a plataforma Qt interpreta que o sinal veio do botão direito do mouse;
+- O sistema checa, através de uma estrutura condicional switch-case, qual é o estado daquela casa; se está coberta ou marcada (com bandeira);
+- Caso estiver coberta, o ícone de bandeira é mostrado no botão, o estado é alterado para "marcado" e um sinal é emitido com parâmetro True para a classe Field, que está gerindo o display do contador de bandeiras;
+- Caso o botão já estiver marcado, o ícone de bandeira é retirado, o estado da casa é alterado para "coberta" e um sinal é emitido para Field, como no caso anterior, porém com o parâmetro False;
+- Na classe Field, independente do estado do botão clicado, o sistema registra o clique em um contador geral de cliques com o botão direito do mouse, a fim de mostrar, no fim do jogo, a quantidade de cliques registrados na partida;
+- Em seguida, a classe Field conecta o sinal emitido pela classe Tile em um slot próprio - setFlag(bool act) - que faz a contagem das bandeiras alocadas;
+- O slot recebe como parâmetro um dado booleano do sinal de Tile;
+- A função do slot é verificar o valor booleano do parâmetro e, através de uma condicional, definir se o contador cresce ou decresce;
+- Se o parâmetro for True (o botão estava coberto/limpo), o sistema decrementa uma unidade do contador, pois uma bandeira foi alocada;
+- Se não (parâmetro False - o botão já estava marcado), o sistema acrescenta uma unidade ao contador, visto que a bandeira foi retirada e está novamente disponível para ser utilizada;
+- O sistema, na própria classe Field, mostra no display o contador de bandeiras "disponíveis" de acordo com a quantidade de bombas dispostas no mapa;
+- O jogo não limita a quantidade de bandeiras alocadas no mapa, porém se o display mostrar um número negativo significa que há mais marcações do que bombas, evidenciando algum erro de interpretação do jogador.  
 
 
 ## Diagrama de Domínio do problema
