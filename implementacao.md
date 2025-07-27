@@ -65,7 +65,7 @@ Descrição: Usa QPushButton para criar cada célula interativa do campo, com es
 Herança: Herda de QDialog.<br>
 Descrição: Usa QDialog para exibir o resultado do jogo em uma janela própria. Vitória ou derrota e estatísticas já comentadas são exibidas.
 
-# Associação entre classes
+## Associação entre classes
 
 - **Field e Tile:**<br>
 Tipo: Composição (linha sólida com losango preenchido).<br>
