@@ -130,28 +130,14 @@ Este caso de uso, em termos técnicos e tendo em vista o diagrama de classe a se
      style="padding: 10px">
 </div>
 
-## Diagramas de sequência
-
-<img src="images/escolhe_dif.png"
-     width="70%"
-     style="padding: 10px">
-
-<img src="images/inicia_jogo.png"
-     width="80%"
-     style="padding: 10px">
-
-<img src="images/abrir_campo.png"
-     width="80%"
-     style="padding: 10px">
-
-<img src="images/bandeira.png"
-     width="80%"
-     style="padding: 10px">
-
-
-
+## Diagrama de sequência - colocar bandeira
 <div align="center">
+<img src="images/colocar_bandeira.png"
+     width="80%"
+     style="padding: 10px">
+</div>
 
+<br><br>
+<div align="center">
 [Retroceder](README.md) | [Avançar](projeto.md)
-
 </div>
