@@ -1,0 +1,20 @@
+<RCC>
+    <qresource prefix="/images"/>
+    <qresource prefix="/">
+        <file>images/smiley_face.png</file>
+        <file>images/Flag_icon.png</file>
+        <file>images/bomb_icon.png</file>
+        <file>images/one_icon.png</file>
+        <file>images/two_icon.png</file>
+        <file>images/three_icon.png</file>
+        <file>images/four_icon.png</file>
+        <file>images/five_icon.png</file>
+        <file>images/six_icon.png</file>
+        <file>images/seven_icon.png</file>
+        <file>images/eight_icon.png</file>
+        <file>images/explosion_icon.png</file>
+        <file>images/dead_face.png</file>
+        <file>images/win_face.png</file>
+        <file>images/WinFlag_icon.png</file>
+    </qresource>
+</RCC>
