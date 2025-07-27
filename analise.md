@@ -139,5 +139,7 @@ Este caso de uso, em termos técnicos e tendo em vista o diagrama de classe a se
 
 <br><br>
 <div align="center">
+  
 [Retroceder](README.md) | [Avançar](projeto.md)
+
 </div>
