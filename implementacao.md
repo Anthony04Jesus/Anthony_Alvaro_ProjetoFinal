@@ -71,7 +71,13 @@ Descrição: Usa QDialog para exibir o resultado do jogo em uma janela própria.
 Tipo: Composição (linha sólida com losango preenchido).<br>
 Descrição: Field contém um array de Tile , representando o grid de casas. Os tiles são criados e destruídos junto com Field.
 
+- **Field e ResultWindow:** <br>
+Tipo: Associação (linha sólida sem losango).<br>
+Descrição: Field implementa ResultWindow em mostraResult() para exibir o resultado, mas não mantém uma liagação permanente, sendo a relação temporária que se atualiza a cada partida.
 
+- **Tile e Field:** <br>
+Tipo: Associação via sinais/slots.<br>
+Descrição: Tile emite sinais (rightClick, leftClick) que são conectados a slots em Field (setFlag, openTile), indicando uma relação de comunicação entre classes sem afetarem o ciclo de vida uma da outra.
 
 
 
