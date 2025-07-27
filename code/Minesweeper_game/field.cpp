@@ -139,7 +139,7 @@ void Field::loadBombs( int line , int colum)
 
 void Field::mostraResult()
 {
-    ResultWindow *dialog = new ResultWindow(result, clique_direito, clique_esquerdo, _time_count);
+    ResultWindow *dialog = new ResultWindow(result, clique_direito, clique_esquerdo, _time_count-1);
     dialog->exec();
     delete dialog;
     clique_direito = 0; // Zera contagem pro próximo jogo;
